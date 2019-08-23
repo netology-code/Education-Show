@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}
+
+.centered-container {
+  width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+html {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #B5B5BE;
+  background-color: #bebebe;
+}
+
+/* ~~~ header ~~~ */
+
+.top-menu {
+  background-color: #0F0F13;
+  overflow: hidden;
+}
+
+.top-menu-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.top-menu-container::before {
+  content: "";
+  position: absolute;
+  width: 378px;
+  background: url(svg/dots-header.svg);
+  background-repeat: repeat-y;
+  background-position: right top;
+  background-size: 347px 27px;
+  left: -378px;
+  top: 16px;
+  bottom: 16px;
+}
+
+.top-menu .logo-link {
+  font-size: 0;
+  position: relative;
+  left: -18px;
+}
+
+.top-menu .logo {
+  width: 222px;
+  height: 69px;
+}
+
+.top-menu .search-nav-group {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.top-menu .search-form .search-button {
+  width: 21px;
+  height: 21px;
+  background: url("svg/search.svg") no-repeat transparent;
+  background-size: 21px;
+  border: none;
+} 
+
+.top-menu .search-form .search-button:hover {
+  cursor: pointer;
+  background-image: url("svg/search-hover.svg");
+}
+
+.top-menu .top-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 32px;
+  font-size: 14px;
+}
+
+.top-menu .top-navigation .top-navigation-link {
+  font-weight: 600; 
+  color: #B5B5BE;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.top-menu .top-navigation .top-navigation-link + .top-navigation-link {
+  margin-left: 32px;
+}
+
+.top-menu .top-navigation .top-navigation-link:hover {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+/* ~~~ sections ~~~ */
+
+.additional-info {
+  background-color: #0F0F13;
+  padding: 30px 0;
+}
+
+.additional-info .centered-container {
+  position: relative;
+}
+  
+.additional-info .centered-container::after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  top: -50px;
+  bottom: -50px;
+  left: 30%;
+  background: url(svg/dots-background.svg) repeat-y;
+  background-size: 704px 27px;
+  background-position: right top;
+  z-index: 0;
+}
+
+.section {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 1;
+}
+
+.section + .section {
+  margin-top: 30px;
+}
+
+.section .section-header {
+  position: relative;
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  color: #FFFFFF;
+}
+
+.section .section-header::after {
+  content: "...";
+  position: relative;
+  top: -5px;
+  left: 9px;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  color: #CC364E;
+}
+
+.movie-details .movie-details-p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #B5B5BE;
+}
+
+.movie-details .movie-details-p + .movie-details-p{
+  margin-top: 7px;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-card {
+  width: 265px;
+  color: #B5B5BE;
+  text-decoration: none;
+}
+
+.movie-card:hover {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  transform: scale(1.03);
+  transition: transform 0.2s ease-out;
+}
+
+.movie-card:not(:nth-of-type(4n+1)) {
+  margin-left: 40px;
+}
+
+.movie-card .movie-poster {
+  width: 265px;
+  height: 148px;
+}
+
+.movie-card .movie-meta {
+  margin-top: 11px;
+  font-size: 0;
+}
+
+.movie-card .movie-meta span {
+  padding: 0 3px;
+  border: 1px solid #B5B5BE;
+  font-size: 13px;
+}
+
+.movie-card .movie-meta span + span {
+  margin-left: 5px;
+}
+
+.movie-card .movie-meta .movie-lang {
+  font-style: italic;
+  text-transform: uppercase;
+  padding: 0 7px 0 4px;
+}
+
+.movie-card .movie-description {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;  
+  margin-top: 11px;
+}
+
+.movie-card .movie-description-p + .movie-description-p {
+  margin-top: 15px;
+}
+
+/* footer */
+
+.footer {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  background-color: transparent;
+  color: #FFFFFF;
+}
