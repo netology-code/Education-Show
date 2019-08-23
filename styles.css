@@ -177,6 +177,10 @@ html {
   font-weight: 700;
 }
 
+.movie-details .movie-details-highlight {
+  font-weight: 700;
+}
+
 .movies {
   display: flex;
   flex-wrap: wrap;
