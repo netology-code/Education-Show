@@ -26,7 +26,6 @@ html {
 }
 
 /* ~~~ header ~~~ */
-
 .top-menu {
   background-color: #0F0F13;
   overflow: hidden;
@@ -45,9 +44,8 @@ html {
   content: "";
   position: absolute;
   width: 378px;
-  background: url(svg/dots-header.svg);
-  background-repeat: repeat-y;
-  background-position: right top;
+
+  background: url(svg/dots-header.svg) repeat-y right top;
   background-size: 347px 27px;
   left: -378px;
   top: 16px;
@@ -78,7 +76,8 @@ html {
   background: url("svg/search.svg") no-repeat transparent;
   background-size: 21px;
   border: none;
-} 
+  transition: background 0.2s ease-in-out;
+}
 
 .top-menu .search-form .search-button:hover {
   cursor: pointer;
@@ -97,6 +96,7 @@ html {
   color: #B5B5BE;
   text-transform: uppercase;
   text-decoration: none;
+  transition: color 0.2s ease-in-out;
 }
 
 .top-menu .top-navigation .top-navigation-link + .top-navigation-link {
@@ -126,9 +126,8 @@ html {
   top: -50px;
   bottom: -50px;
   left: 30%;
-  background: url(svg/dots-background.svg) repeat-y;
+  background: url(svg/dots-background.svg) repeat-y right top;
   background-size: 704px 27px;
-  background-position: right top;
   z-index: 0;
 }
 
@@ -164,14 +163,18 @@ html {
   color: #CC364E;
 }
 
-.movie-details .movie-details-p {
+.movie-details .movie-details-text {
   font-size: 16px;
   line-height: 22px;
   color: #B5B5BE;
 }
 
-.movie-details .movie-details-p + .movie-details-p{
+.movie-details .movie-details-text + .movie-details-text {
   margin-top: 7px;
+}
+
+.movie-details .movie-details-highlight {
+  font-weight: 700;
 }
 
 .movies {
@@ -183,13 +186,14 @@ html {
   width: 265px;
   color: #B5B5BE;
   text-decoration: none;
+  transition: transform 0.2s ease-out;
+  will-change: transform;
 }
 
 .movie-card:hover {
   color: #FFFFFF;
   border-color: #FFFFFF;
   transform: scale(1.03);
-  transition: transform 0.2s ease-out;
 }
 
 .movie-card:not(:nth-of-type(4n+1)) {
@@ -229,7 +233,7 @@ html {
   margin-top: 11px;
 }
 
-.movie-card .movie-description-p + .movie-description-p {
+.movie-card .movie-description-text + .movie-description-text {
   margin-top: 15px;
 }
 
