@@ -52,25 +52,25 @@ html {
   bottom: 16px;
 }
 
-.top-menu .logo-link {
+.logo-link {
   font-size: 0;
   position: relative;
   left: -18px;
 }
 
-.top-menu .logo {
+.logo {
   width: 222px;
   height: 69px;
 }
 
-.top-menu .search-nav-group {
+.search-nav-group {
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.top-menu .search-form .search-button {
+.search-button {
   width: 21px;
   height: 21px;
   background: url("svg/search.svg") no-repeat transparent;
@@ -79,19 +79,19 @@ html {
   transition: background 0.2s ease-in-out;
 }
 
-.top-menu .search-form .search-button:hover {
+.search-button:hover {
   cursor: pointer;
   background-image: url("svg/search-hover.svg");
 }
 
-.top-menu .top-navigation {
+.top-navigation {
   display: flex;
   flex-wrap: wrap;
   margin-left: 32px;
   font-size: 14px;
 }
 
-.top-menu .top-navigation .top-navigation-link {
+.top-navigation-link {
   font-weight: 600; 
   color: #B5B5BE;
   text-transform: uppercase;
@@ -99,11 +99,11 @@ html {
   transition: color 0.2s ease-in-out;
 }
 
-.top-menu .top-navigation .top-navigation-link + .top-navigation-link {
+.top-navigation-link + .top-navigation-link {
   margin-left: 32px;
 }
 
-.top-menu .top-navigation .top-navigation-link:hover {
+.top-navigation-link:hover {
   color: #FFFFFF;
   font-weight: bold;
 }
@@ -111,15 +111,16 @@ html {
 /* ~~~ sections ~~~ */
 
 .additional-info {
+  position: relative;
   background-color: #0F0F13;
   padding: 30px 0;
 }
 
-.additional-info .centered-container {
+.centered-container._dotted {
   position: relative;
 }
-  
-.additional-info .centered-container::after {
+
+._dotted::after {
   content: "";
   position: absolute;
   right: -5px;
@@ -142,7 +143,7 @@ html {
   margin-top: 30px;
 }
 
-.section .section-header {
+.section-header {
   position: relative;
   margin-bottom: 16px;
   font-size: 18px;
@@ -152,7 +153,7 @@ html {
   color: #FFFFFF;
 }
 
-.section .section-header::after {
+.section-header::after {
   content: "...";
   position: relative;
   top: -5px;
@@ -163,21 +164,21 @@ html {
   color: #CC364E;
 }
 
-.movie-details .movie-details-text {
+.movie-details-text {
   font-size: 16px;
   line-height: 22px;
   color: #B5B5BE;
 }
 
-.movie-details .movie-details-text + .movie-details-text {
+.movie-details-text + .movie-details-text {
   margin-top: 7px;
 }
 
-.movie-details .movie-details-highlight {
+.movie-details-highlight {
   font-weight: 700;
 }
 
-.movie-details .movie-details-highlight {
+.movie-details-highlight {
   font-weight: 700;
 }
 
@@ -204,40 +205,40 @@ html {
   margin-left: 40px;
 }
 
-.movie-card .movie-poster {
+.movie-poster {
   width: 265px;
   height: 148px;
 }
 
-.movie-card .movie-meta {
+.movie-meta {
   margin-top: 11px;
   font-size: 0;
 }
 
-.movie-card .movie-meta span {
+.movie-meta span {
   padding: 0 3px;
   border: 1px solid #B5B5BE;
   font-size: 13px;
 }
 
-.movie-card .movie-meta span + span {
+.movie-meta span + span {
   margin-left: 5px;
 }
 
-.movie-card .movie-meta .movie-lang {
+.movie-lang {
   font-style: italic;
   text-transform: uppercase;
   padding: 0 7px 0 4px;
 }
 
-.movie-card .movie-description {
+.movie-description {
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;  
   margin-top: 11px;
 }
 
-.movie-card .movie-description-text + .movie-description-text {
+.movie-description-text + .movie-description-text {
   margin-top: 15px;
 }
 
