@@ -170,6 +170,10 @@ html {
   color: #B5B5BE;
 }
 
+.movie-details .movie-details-highlight {
+  font-weight: 700;
+}
+
 .movie-details .movie-details-p + .movie-details-p{
   margin-top: 7px;
 }
