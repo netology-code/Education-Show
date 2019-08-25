@@ -25,6 +25,10 @@ html {
   background-color: #bebebe;
 }
 
+body {
+  min-width: 1280px;
+}
+
 /* ~~~ header ~~~ */
 .top-menu {
   background-color: #0F0F13;
@@ -247,6 +251,6 @@ html {
 .footer {
   padding-top: 36px;
   padding-bottom: 36px;
-  background-color: transparent;
+  background-color: #000000;
   color: #FFFFFF;
 }
