@@ -1,6 +1,9 @@
 # Education-Show
 
 ## Полезные ссылки
+* [Вёрстка блока](https://codepen.io/solarrust/pen/ExYmZjX?editors=1000) - Код, который писали на лекции
+* [currentColor](https://getinstance.info/articles/css/extending-the-color-cascade-with-the-css-currentcolor-variable/) -  Чем хорош `currentColor`
+* [Калькулятор специфичности](https://specificity.keegan.st/) - Калькулятор специфичности селекторов CSS.
 * [WebReference](https://webref.ru/) — Справочник по всем HTML-тегам и CSS-свойствам
 * [W3CSchool](https://www.w3schools.com/) — Большой сайт с интерактивными упражнениями для тренировки
 * [Блог Workafrolic (±∞)](https://medium.com/@ABatickaya) — Блог с переводами полезных статей по фронтенду, в том числе для начинающих
